@@ -8,8 +8,10 @@ Inspired by [DeePSiM](http://lmb.informatik.uni-freiburg.de/resources/binaries/a
 ## Dependency
 You will need to compile the [deepsim-caffe-branch](https://github.com/dosovits/caffe-fr-chairs/tree/deepsim). And make sure your `PYTHONPATH` point to it.
 
+The deepsim-caffe only support cudnn-4.0. If disable the cudnn engine and replace some convolution layers with the master branch, a latest cudnn and cuda will work fine.
+
 ## Training
-For face generator, please prepare [celebA](https://github.com/soumith/dcgan.torch#11-train-a-face-generator-using-the-celeb-a-dataset) dataset as the link said. Than make a train list file and put it in the data.prototxt.
+For face generator, please prepare [celebA](https://github.com/soumith/dcgan.torch#11-train-a-face-generator-using-the-celeb-a-dataset) dataset as the link said. Then make a train list file and put it in the data.prototxt.
 
 Just typing
 ```
