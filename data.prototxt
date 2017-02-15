@@ -1,0 +1,21 @@
+
+layer {
+  name: "data"
+  type: "ImageData"
+  top: "data"
+  top: "label"
+  transform_param {
+    mirror: true
+#    crop_size: 227
+#    mean_file: "/data/deploy/caffe/data/ilsvrc12/imagenet_mean.binaryproto"
+    mean_value: 104
+    mean_value: 117
+    mean_value: 123
+  }
+  image_data_param {
+    source: "/data/database/conf/celebA.txt"
+    batch_size: 64
+#    new_height: 256
+#    new_width: 256
+  }
+}
