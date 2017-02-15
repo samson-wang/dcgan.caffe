@@ -15,7 +15,7 @@ For face generator, please prepare [celebA](https://github.com/soumith/dcgan.tor
 
 Just typing
 ```
-python training
+python train.py
 ```
 
 ## Visualization
