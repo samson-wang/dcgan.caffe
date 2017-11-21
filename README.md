@@ -1,5 +1,4 @@
 # dcgan.caffe: A pure caffe-python implementation of [DC-GAN](https://github.com/soumith/dcgan.torch)
-======================================================================================
 
 As far as I know, there is no light-weight implementation of DCGAN based on caffe.
 
@@ -39,6 +38,10 @@ The file should look like
 /data/Repo/dcgan.torch/celebA/img_align_celeba/000013.jpg 0
 ...
 ```
+## Trouble shooting
+- All your images' size should be `64x64`, which is specified in https://github.com/samson-wang/dcgan.caffe/blob/master/discriminator.prototxt
+
+- Please use the *deepsim* branch
 
 ## Visualization
 To view the model result by
