@@ -18,6 +18,28 @@ Just typing
 python train.py
 ```
 
+## Train file list
+Each line has two columns seperated by space. The second column indicates the label of the corresponding image. Actually the label could be all zeros, since the training only need the images themselves to be the targets. 
+
+The file should look like
+
+```
+/data/Repo/dcgan.torch/celebA/img_align_celeba/000001.jpg 0
+/data/Repo/dcgan.torch/celebA/img_align_celeba/000002.jpg 0
+/data/Repo/dcgan.torch/celebA/img_align_celeba/000003.jpg 0
+/data/Repo/dcgan.torch/celebA/img_align_celeba/000004.jpg 0
+/data/Repo/dcgan.torch/celebA/img_align_celeba/000005.jpg 0
+/data/Repo/dcgan.torch/celebA/img_align_celeba/000006.jpg 0
+/data/Repo/dcgan.torch/celebA/img_align_celeba/000007.jpg 0
+/data/Repo/dcgan.torch/celebA/img_align_celeba/000008.jpg 0
+/data/Repo/dcgan.torch/celebA/img_align_celeba/000009.jpg 0
+/data/Repo/dcgan.torch/celebA/img_align_celeba/000010.jpg 0
+/data/Repo/dcgan.torch/celebA/img_align_celeba/000011.jpg 0
+/data/Repo/dcgan.torch/celebA/img_align_celeba/000012.jpg 0
+/data/Repo/dcgan.torch/celebA/img_align_celeba/000013.jpg 0
+...
+```
+
 ## Visualization
 To view the model result by
 ```
